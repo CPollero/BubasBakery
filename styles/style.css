@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 1rem;
+}
+
+/* Tipografía general */
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  color: rgb(31, 31, 31);
+  margin-bottom: 0.5rem;
+}
+
+p, label, input, textarea {
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(31, 31, 31);
+  margin-bottom: 1rem;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.navegacion .menu a {
+  color: rgb(31, 31, 31);
+  font-weight: bold;
+}
+
+/* Bienvenida / Inicio */
+.bienvenida {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.imagen-principal {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.descripcion {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Catálogo de productos */
+.catalogo {
+  padding: 2rem;
+}
+
+.producto {
+  margin-bottom: 2rem;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Historia */
+.historia {
+  padding: 2rem;
+  text-align: center;
+}
+
+.historia img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Ubicación */
+.ubicacion {
+  padding: 2rem;
+  text-align: center;
+}
+
+.imagen-sede {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Formulario */
+.formulario {
+  padding: 2rem;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.footer_title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
