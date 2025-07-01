@@ -1,3 +1,21 @@
+:root {
+  /* Colores base */
+  --color-primario: #9f7fb3; /* Pantone 257 Color base */
+
+  /* Fondos */
+  --fondo-claro: #f5f1f7; /* Para fondos generales, casi blanco pero cálido */
+  --fondo-secundario: #c6a1cf; /* Para secciones o tarjetas */
+  --fondo-oscuro-suave: #2d2a2f; /* En lugar de negro puro. dark mode */
+
+  /* Texto */
+  --texto-principal: #4e4a52; /* Gris lavanda, legible */
+  --texto-secundario: #6d5a7a; /* Para subtítulos, íconos, etc */
+  --texto-especial: #f5f1f7; /* Para textos con fondo primario */
+
+  /* Acentos */
+  --acento-claro: #d9bfd9; /* Lila claro para botones, hover o bordes */
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -7,128 +25,63 @@
 }
 
 body {
-  background-color: aliceblue;
-  font-family: 'Nunito Sans', sans-serif;
-  padding: 1rem;
+  background-color: var(--fondo-claro);
 }
 
 /* Tipografía general */
-h1, h2, h3 {
-  font-family: 'Inter', sans-serif;
-  color: rgb(31, 31, 31);
-  margin-bottom: 0.5rem;
+* {
+  font-family: "Inter", sans-serif;
+  color: var(--texto-principal);
 }
 
-p, label, input, textarea {
-  font-family: 'Nunito Sans', sans-serif;
-  color: rgb(31, 31, 31);
+p,
+label,
+input,
+textarea {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--texto-principal);
   margin-bottom: 1rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  color: var(--texto-secundario);
+}
+
+.centrar_texto {
+  text-align: center;
+}
+
 /* Header */
-.header {
-  background-color: #fff;
-  padding: 1rem 0;
-  text-align: center;
+header {
+  background-color: var(--color-primario);
 }
 
-.titulo {
+.header_titulo {
+  color: var(--texto-especial);
   font-size: 2rem;
-}
-
-.navegacion .menu a {
-  color: rgb(31, 31, 31);
   font-weight: bold;
-}
-
-/* Bienvenida / Inicio */
-.bienvenida {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.imagen-principal {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 12px;
-}
-
-.subtitulo {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-.descripcion {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-/* Catálogo de productos */
-.catalogo {
-  padding: 2rem;
-}
-
-.producto {
-  margin-bottom: 2rem;
-}
-
-.producto img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-}
-
-/* Historia */
-.historia {
-  padding: 2rem;
-  text-align: center;
-}
-
-.historia img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  margin-top: 1rem;
-}
-
-/* Ubicación */
-.ubicacion {
-  padding: 2rem;
-  text-align: center;
-}
-
-.imagen-sede {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  margin-top: 1rem;
-}
-
-/* Formulario */
-.formulario {
-  padding: 2rem;
-}
-
-.formulario form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: auto;
-}
-
-input, textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  text-align: left;
+  margin: 1rem 0;
 }
 
 /* Footer */
-.footer {
-  background-color: #f3f3f3;
-  text-align: center;
+footer {
+  background-color: var(--color-primario);
 }
 
-.footer_title {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+.footer_texto {
+  color: var(--texto-especial);
+}
+
+footer img {
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
 }
