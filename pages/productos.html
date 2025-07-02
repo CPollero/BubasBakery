@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/style.css" />
-  <title>Productos</title>
-</head>
-<body>
-  <header class="header">
-    <h1 class="titulo">Buba's Bakery</h1>
-    <nav class="navegacion">
-      <ul class="menu">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="quienes_somos.html">Quiénes somos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="donde_estamos.html">¿Dónde estamos?</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Productos</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header_titulo">Buba's Bakery</h1>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="./quienes_somos.html">Quiénes somos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./donde_estamos.html">¿Dónde estamos?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="catalogo">
+        <h2 class="subtitulo">Nuestros productos</h2>
 
-  <section class="catalogo">
-    <h2 class="subtitulo">Nuestros productos</h2>
-    <div class="producto">
-      <h3>Pastel de frutos rojos</h3>
-      <p>Hecho con frutas frescas, perfecto para celebraciones.</p>
-      <img src="../imagenes/pastel_rojo.jpg" alt="Pastel de frutos rojos">
-    </div>
-    <div class="producto">
-      <h3>Pan artesanal</h3>
-      <p>Pan horneado a diario, crujiente por fuera, suave por dentro.</p>
-      <img src="../imagenes/pan_artesanal.jpg" alt="Pan artesanal">
-    </div>
-    <div class="producto">
-      <h3>Brownie de la casa</h3>
-      <p>Dulce, tierno y chocolatoso ¿Para qué mas?.</p>
-      <img src="../imagenes/brownie_casa.jpg" alt="Brownie de la casa">
-    </div>
-  </section>
+        <div class="productos_grid">
+          <a href="./products/pastel_rojo.html" class="producto">
+            <h3>Pastel de frutos rojos</h3>
+            <p>Hecho con frutas frescas, perfecto para celebraciones.</p>
+            <img src="../img/pastel_rojo.avif" alt="Pastel de frutos rojos" />
+          </a>
 
-  <footer class="footer">
-    <p class="footer_title">Síguenos en redes:</p>
-    <ul>
-      <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-      <li><a href="https://x.com" target="_blank">X (Twitter)</a></li>
-      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-    </ul>
-    <p>2025 Buba's Bakery. Todos los derechos reservados.</p>
-  </footer>
-</body>
+          <a href="./products/pan_artesanal.html" class="producto">
+            <h3>Pan artesanal</h3>
+            <p>Pan horneado a diario, crujiente por fuera, suave por dentro.</p>
+            <img src="../img/pan_artesanal.webp" alt="Pan artesanal" />
+          </a>
+
+          <a href="./products/brownie_casa.html" class="producto">
+            <h3>Brownie de la casa</h3>
+            <p>Dulce, tierno y chocolatoso ¿Para qué más?</p>
+            <img src="../img/brownie_casa.jpg" alt="Brownie de la casa" />
+          </a>
+          
+          <a href="./products/pastel_rojo.html" class="producto">
+            <h3>Pastel de frutos rojos</h3>
+            <p>Hecho con frutas frescas, perfecto para celebraciones.</p>
+            <img src="../img/pastel_rojo.avif" alt="Pastel de frutos rojos" />
+          </a>
+
+          <a href="./products/pan_artesanal.html" class="producto">
+            <h3>Pan artesanal</h3>
+            <p>Pan horneado a diario, crujiente por fuera, suave por dentro.</p>
+            <img src="../img/pan_artesanal.webp" alt="Pan artesanal" />
+          </a>
+
+          <a href="./products/brownie_casa.html" class="producto">
+            <h3>Brownie de la casa</h3>
+            <p>Dulce, tierno y chocolatoso ¿Para qué más?</p>
+            <img src="../img/brownie_casa.jpg" alt="Brownie de la casa" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="centrar_texto footer_texto">
+        2025 Buba's Bakery. Todos los derechos reservados.
+      </p>
+      <a href="https://www.instagram.com/bubas_bakery" target="target_blank">
+        <img src="../img/logo_instagram.png" alt="Instagram logo" />
+      </a>
+      <a href="https://www.facebook.com/bubas_bakery" target="target_blank">
+        <img src="../img/logo_facebook.png" alt="Facebook logo" />
+      </a>
+      <a href="https://www.tiktok.com/bubas_bakery" target="target_blank">
+        <img src="../img/logo_tiktok.png" alt="TikTok logo" />
+      </a>
+    </footer>
+  </body>
 </html>

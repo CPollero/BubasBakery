@@ -59,15 +59,44 @@ h6 {
 
 /* Header */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
   background-color: var(--color-primario);
 }
 
 .header_titulo {
   color: var(--texto-especial);
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin:  0;
+}
+
+header a {
+  color: var(--texto-principal);
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: left;
   margin: 1rem 0;
+}
+
+.menu {
+  list-style: none; 
+  display: flex; 
+  gap: 1.5rem; 
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--texto-principal);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
 }
 
 /* Footer */
@@ -84,4 +113,95 @@ footer img {
   width: 2rem;
   height: 2rem;
   object-fit: cover;
+}
+
+/* Productos */
+.catalogo {
+  padding: 2rem;
+  text-align: center;
+}
+
+.productos_grid {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.producto {
+  display: block;
+  background-color: var(--fondo-claro);
+  border: 2px solid var(--color-primario);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.producto img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.detalle-producto {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+.producto-imagen img {
+  width: 80rem;
+  max-width: 400rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.producto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.producto-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.producto-info p {
+  font-size: 1.2rem;
+  color: var(--texto-principal);
+}
+
+.producto-info h2 {
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.producto-info button {
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primario);
+  color: var(--texto-especial);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.producto-info button:hover {
+  background-color: var(--acento-claro); 
 }
